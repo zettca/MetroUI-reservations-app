@@ -1,0 +1,103 @@
+/* METRO UI TEMPLATE
+/* Copyright 2012 Thomas Verelst, http://metro-webdesign.info*/
+
+/*GENERAL*/
+html{
+	margin:0;
+	padding:0;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	min-width:400px;
+	font-weight:normal;
+}
+body{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+/*LAYOUT PARTS*/
+div#wrapper{
+	margin:0 0 0 20px;
+	overflow:hidden;
+}
+div#headerWrapper{
+	padding: 5px 0 7px 0;
+	z-index:2;
+	overflow:hidden;
+}
+div#header{
+	max-width:900px;/* MAX WIDTH OF PAGE*/
+	padding-left:15px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+div#headerTitles{
+	float:left;
+	display:inline-block;
+}
+div#header h1{
+	margin-top:0;
+	margin-bottom:0;
+}
+div#header h2{
+	margin: 0 0 0 3px;
+	z-index:12;
+}
+div#contentWrapper{
+	max-width: 900px; /* MAX WIDTH OF PAGE*/
+	min-width: 400px;
+	min-height:400px;
+	margin:0 auto 60px auto; /* auto margin to center horizontally*/
+	padding:0 20px 30px 20px;
+	z-index:4;
+}
+div.pageContent{
+	height:auto !important;
+}
+div#content{
+	
+	-webkit-transition:margin-left 600ms;
+	-moz-transition:margin-left 600ms;
+	-o-transition:margin-left 600ms;
+	-ms-transition:margin-left 600ms;
+	transition:margin-left 600ms;
+	z-index:4;
+	font-weight:normal;
+}
+a#footer{ /*show a little footer in the rightdown corner*/
+	position:fixed;
+	bottom:0;
+	right:0;
+	padding:1px;
+	font-weight:lighter;
+	text-decoration:none;
+	z-index:50; /* draw it on top of everything */
+}
+a#footer:hover{
+	cursor:default;
+}
+img#arrowLeft,img#arrowRight{
+	position:absolute;
+	margin-top:60px;
+	opacity: 0.5;
+	filter:  alpha(opacity=50);
+	height:32px;
+	display:none;
+}
+img#arrowLeft:hover,img#arrowRight:hover{
+	cursor:pointer;
+}
+/* General Navigation */
+a#siteTitle{ /*the siteName */
+	text-decoration:none;
+	font-weight:lighter;
+	z-index:12;
+}
+a.groupTitle{ /*the title of the tilegroups*/	
+	position:absolute;
+	text-decoration:none;
+}
+a.groupTitle h3{
+	margin:0;
+	font-weight:lighter;
+}

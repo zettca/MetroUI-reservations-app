@@ -1,0 +1,14 @@
+﻿/* if you change css, it's recommend to not delete the line in the files, but overwrite it here.
+For example, if somewhere is a line: .redButton{ background-color:#C33; }, you can overwrite it here to .redButton{ background-color:#999; } and leave the other line
+this is easier for upgrading ¨*/
+
+h1 a:hover, a h3:hover { color:#B00 !important; }
+
+
+a.navActive, a.navActive:visited  { background-color:#900; color:#FFF !important; }
+a.navActive:hover { background-color:#C00; color:#FFF !important; }
+
+#txtDate,#txtDate2 { font-family:"Open Sans"; font-weight:bold; text-align:center; cursor:pointer; }
+#txtDate { display:inline; position:relative; top:38px; left:350px; z-index:999; }
+
+.ui-datepicker{ font-size:10px; }

@@ -1,0 +1,125 @@
+/* TILES */ 
+/*General*/
+.tile{
+	text-decoration:none;
+	color: #FFF;
+	padding:1px;
+	margin: 0;
+	margin-bottom:500px;
+	display:none;
+	position:absolute;
+	overflow:hidden;	
+	transition: box-shadow 0.15s ease-out;
+	-moz-transition: box-shadow 0.15s ease-out;
+	-webkit-transition:  box-shadow 0.15s ease-out;
+	-o-transition:  box-shadow 0.15s ease-out;
+	-ms-transition:  box-shadow 0.15s ease-out;
+	font-weight:normal;
+}
+.tile:visited{
+	color:#FFF;
+}
+.tile img{
+	border:none;
+}
+.tile:hover{
+	padding:0;
+	text-decoration: none;
+	color:#FFF;
+	cursor:pointer;
+	border: 1px solid #FFF;
+	-moz-box-shadow: 0 0 10px #333;
+	-webkit-box-shadow: 0 0 10px #333;
+	box-shadow: 0 0 10px #333;
+}
+
+/*LABELS */
+div.tileLabelWrapper{
+	position:absolute;
+	right:0;
+	z-index:11;
+}
+div.tileLabel{
+	display:inline-block;
+	font-size:14px;	
+	text-decoration: none;  
+    color: #FFF; 
+}
+div.tileLabelDesc{
+	border-top:1px solid #999;
+	background-color:rgb(140,140,140);
+	background-color:rgba(55,55,55,0.6);
+	filter:opacity(alpha=0.8);
+	color:#CCC;
+	padding:3px;
+	font-size:12px;
+}
+div.showOnHover{
+	display:none;
+}
+/*BOTTOM LABEL */
+div.tileLabelWrapper.bottom{
+	bottom:0;
+	left:0;	
+}
+div.tileLabel.bottom{	
+	padding: 2px 2px 1px 2px;  
+    border-right: 15px solid transparent;  
+    border-bottom: 20px solid #777;    
+    height: 0;  
+    line-height: 22px;  
+}
+/* TOP LABEL */
+div.tileLabelWrapper.top{
+	top:0;
+	border-left: 15px solid transparent;  
+    border-top: 20px solid #777;
+	height: 0;
+	z-index:15;
+}
+div.tileLabel.top{
+	position:relative;
+	padding: 0px 2px 2px 2px;  
+	margin-top:-20px;  	 
+}
+/* tileTitleText */
+.tileTitle{
+	margin:3px 3px 0 10px;
+	padding: 0px;
+	font-size: 30px;
+	font-weight:500;
+}
+.tileDesc{
+	margin: 0 12px 0 12px;
+	padding: 0;
+	font-size: 13px;
+	position:absolute;	
+}
+/* tileImg*/
+a.tileImg:hover div.tileLabelWrapper.bottom{
+	bottom:0;
+	right:0;
+	left:0;
+}
+a.tileImg:hover div.tileLabelWrapper.top{
+	margin-right:-1px;
+	margin-top:-1px;
+}
+a.tileImg:hover div.tileLabelDesc{
+	color:#FFF;
+}
+/* When a tile links to nowhere, use this as optClass to not confuse visitors */
+a.noClick:hover, a.inactiveTile:hover{
+	cursor:default;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	padding: 1px;
+	border:none;
+}
+/*Image Slider Tile */
+.tileImageSlider .tileImageSliderText{
+	padding:5px;
+	font-size:26px;
+	text-align:center;
+}

@@ -1,0 +1,105 @@
+html{
+	min-width:310px !important;
+}
+body{
+	min-width:310px !important;
+	padding:0;margin:0;
+}
+/*GENERAL PAGE */
+div#header{
+	padding-left:3px;
+}
+div#headerWrapper{
+	text-align:left;
+	overflow-x:auto;
+	width:100%;
+}
+div#wrapperMobile{
+	width:auto;
+	padding:0 0 0 5px;	
+}
+div#subNavWrapper{
+	margin:0;
+	margin-top:5px;
+	width:310px;
+	height:auto;
+}
+div#subNav a{
+	margin-top:5px;
+}
+div#contentWrapper{
+	padding: 0 0 10px 0;
+	width:310px !important;
+	min-width:310px !important;
+}
+div#content{
+	width:310px !important;
+	position:relative;
+	top:0;
+	margin-top:0;
+}
+a#siteTitle{
+	display:block;
+	font-size:34px !important;
+}
+#footer{
+	color:#666;
+	text-align:center;
+	border-top:1px solid #666;
+	margin: 30px 20px 5px 20px;
+	padding: 5px 0;
+	font-size:11px;
+	display:none;
+}
+/*NAV */
+a.subNavItemActive{
+	text-decoration:underline !important;
+	padding: 2px 7px 2px 7px !important;
+	border:1px #FFF solid;
+	box-shadow: 0px 0px 5px 2px #999 ;
+	-o-box-shadow: 0px 0px 5px 2px #999 ;
+	-ms-box-shadow: 0px 0px 5px 2px #999 ;
+	-moz-box-shadow: 0px 0px 5px 2px #999 ;
+	-webkit-box-shadow: 0px 0px 5px 2px #999 ;
+}
+div#subNav a:hover{
+	height: 20px;
+	border:1px solid #CCC;
+	padding: 2px 7px 2px 7px !important;
+}
+
+a.groupTitle h3{
+	margin:0;
+}
+/*MISc*/
+#copyrightTileDesc{
+	margin-top:20px;
+	text-align:right;
+	color:#777;
+	font-size:10px;
+}
+pre{
+	overflow-x:scroll;
+}
+/* LANDSCAPE */
+@media only screen and (orientation: landscape) {
+html{
+	min-width:480px !important;
+}
+body{
+	min-width:480px !important;
+}
+div#subNavWrapper{
+	min-width:480px;
+}
+div#contentWrapper{
+	width:480px !important;
+	min-width:480px !important;
+}
+div#content{
+	width:480px !important;
+}
+a#siteTitle{
+	max-width:480px;
+}
+}

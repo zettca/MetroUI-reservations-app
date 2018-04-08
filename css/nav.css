@@ -1,0 +1,53 @@
+/* MAIN nav (the top buttons) */
+div#nav{
+	z-index:1;
+	float:right;
+	vertical-align:middle;
+	margin-top:10px;
+}
+a.navItem{
+	padding:0;
+	margin:0;
+	display:inline-block;
+	z-index:6;
+	-webkit-transition: background 100ms ease-in;
+    -moz-transition: background 100ms ease-in;
+    -o-transition: background 100ms ease-in;
+	-ms-transition: background 100ms ease-in;
+    transition: background 100ms ease-in;
+}
+a.navItem img{
+	border:none;
+}
+
+/* Subnav, on each page */
+div#subNavWrapper{
+	z-index:4;
+	position:relative;
+	margin: 0 auto;
+	text-align:center;
+	height:35px;
+}
+div#subNav a{	
+	height:20px;
+	margin: 0px 5px 0 0;
+	padding:3px 8px 3px 8px;
+	display:inline-block;
+	text-decoration:none;
+	z-index:100;
+	transition: height 0.2s, box-shadow 0.4s ease-out;
+	-moz-transition: height 0.2s, box-shadow 0.4s ease-out;
+	-webkit-transition:  height 0.2s, box-shadow 0.4s ease-out;
+	-o-transition:  height 0.2s, box-shadow 0.4s ease-out;
+	vertical-align:top;
+}
+div#subNav a:hover{
+	height: 28px;
+}
+a.smallSubNav{
+	height:16px !important;
+	font-size:11px !important;
+}
+a.smallSubNav:hover{
+	height:24px !important;
+}
