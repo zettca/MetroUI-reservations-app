@@ -33,7 +33,7 @@ require_once("inc/seo.php");
     <meta name="keywords" content="<?php echo $siteMetaKeywords;?>"/>
 	<title><?php echo $siteTitle;?></title> 
     <meta name="viewport" content="width=200, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'><!-- Include a nice font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'><!-- Include a nice font -->
 	<?php echo $css; if(file_exists($iecss)){include($iecss);};//include css lines?>  
     <script>
 	siteTitle = "<?php echo $siteTitle;?>";
@@ -41,9 +41,9 @@ require_once("inc/seo.php");
 	enableMobile = "false";
 	theme = "<?php echo $theme?>";
 	</script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
-	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+	<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/inc/jquery181.js"><\/script>')</script>
     <?php echo $js;//include js lines?>
 	<script> // DatePicker
@@ -63,10 +63,7 @@ require_once("inc/seo.php");
 			var day = date.getDate(); if (day<10) day = "0"+day;
 			var month = (date.getMonth())+1; if (month<10) month = "0"+month;
 			dmy = day + "-" + month + "-" + date.getFullYear();
-			if ($.inArray(dmy, availableDates) != -1)
-				return [true,"","Available!"];
-			else
-				return [false,"","unAvailable."];
+			return ($.inArray(dmy, availableDates) != -1) ? [true,"","Available!"] : [false,"","unAvailable."];
 		}
 		var availableDates=new Array();
 
